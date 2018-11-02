@@ -71,7 +71,7 @@ A data frame containing 7 columns.  The columns are:
 \item{Estimate}{Point estimate of population size}
 \item{conf.level}{Confidence level}
 \item{lower}{Lower confidence limit}
-\item{uower}{Upper confidence limit}
+\item{upper}{Upper confidence limit}
 \item{CI_type}{Confidence interval type}
 \item{reps}{Number of bootstrap replicates}
 
