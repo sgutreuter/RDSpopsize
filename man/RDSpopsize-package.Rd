@@ -13,8 +13,7 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{RDSpopsize}
 \packageIndices{RDSpopsize}
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
+
 }
 \author{
 \packageAuthor{RDSpopsize}
@@ -27,13 +26,17 @@ respondent-drive sampling; their potential and limitations. Sexually
 Transmitted Infections 87(4):267-268.
 
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
-~~ the R documentation directory ~~
+
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+
+data(FSW)
+## Estimate the number of female sex workers
+result <- RDS_2S_PSE(1000, data = FSW, list2 = "I.object", weight = "Weight")
+print(result)
+
 }

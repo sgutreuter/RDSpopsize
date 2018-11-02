@@ -104,7 +104,8 @@ help(FSW)
 FSW[1:10, ]
 
 ## Estimate the number of female sex workers
-RDS_2S_PSE(1000, data = FSW, list2 = "I.object", weight = "Weight")
+result <- RDS_2S_PSE(1000, data = FSW, list2 = "I.object", weight = "Weight")
+print(result)
 
 ## The same as above, but controlling the RNG seed to produce repeatable
 ## bootstrap replications
