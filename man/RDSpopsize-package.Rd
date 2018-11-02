@@ -22,7 +22,10 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{RDSpopsize}
 }
 \references{
-~~ Literature or other references for background information ~~
+Berchenko Y, Frost SDW (2011) Capture-recapture methods and
+respondent-drive sampling; their potential and limitations. Sexually
+Transmitted Infections 87(4):267-268.
+
 }
 ~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
 ~~ the R documentation directory ~~

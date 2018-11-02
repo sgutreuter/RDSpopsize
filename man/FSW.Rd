@@ -1,31 +1,41 @@
 \name{FSW}
 \alias{FSW}
+\alias{FSW01}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+Simulated data from a respondent-driven survey of female sex
+  workers
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+  A total of 1000 imaginary keychains of a unique type were distributed
+  to imaginary female sex
+  workers in an imaginary urban area.  One week later a
+  respondent-driven survey recruited 512 imaginary respondents.  Respondents were asked whether they received one of the particular
+  imaginary keychains.  Nothing here is real.
 }
 \usage{data("FSW")}
 \format{
-  A data frame with 512 observations on the following 2 variables.
+  A data frame with 512 observations on the following two variables.
   \describe{
-    \item{\code{I.object}}{a logical vector}
-    \item{\code{Weight}}{a numeric vector}
+    \item{\code{I.object}}{a logical (TRUE/FALSE) or binary (0,1) vector indicating whether
+		respondents received the particular keychain prior to the
+		start of the respondent-driven survey}
+    \item{\code{Weight}}{a numeric vector of respondent-driven survey weights}
   }
 }
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
-\source{
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
+%}
 \references{
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
 data(FSW)
-## maybe str(FSW) ; plot(FSW) ...
+
+FSW[1:10, ]
+
 }
 \keyword{datasets}

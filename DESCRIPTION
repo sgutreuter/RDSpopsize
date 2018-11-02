@@ -1,9 +1,10 @@
 Package: RDSpopsize
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: Estimation of population size from respondent-driven sampling.
+Version: 0.1
 Date: 2018-11-02
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Steve Gutreuter
+Maintainer: Steve Gutreuter <sgutreuter@gmail.com>
+Depends: boot
+Description: Estimation of the size of key populations from respondent-driven sampling.  Currently provides only the capability to estimate population size from two-source capture-recapture sampling or, equivalently, the "multiplier method" commonly used in epidemiology.
+License: GPL-2
