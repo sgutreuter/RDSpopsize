@@ -10,7 +10,7 @@ in PSE applications in epidemiology.  For example, it is easy to envision multip
 wherein one of the follow-up sampling efforts is embedded in an RDS survey, but others are 
 not.  Additionally, there is need for estimators bridging multiple RDS surveys.
 
-Installing the package from R
+Installing the package from R:
 
 library(devtools);
 install_github("sgutreuter/RDSpopsize")
