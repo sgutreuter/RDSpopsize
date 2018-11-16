@@ -7,7 +7,7 @@
 }
 \description{
   Estimate the size of some population from two-source
-  (mark-and-recapture) data.  The first list is comprised of the
+  (capture-and-recapture) data.  The first list is comprised of the
   individuals who received some mark or identifying object or,
   equivalently, the roster of individuals who received some service or
   attended some event.  The second list (recapture data) is comprised of
@@ -27,16 +27,17 @@ RDS_2S_PSE(n.list1 = NULL, data = NULL, list2 = NULL, weight = NULL, bootreps = 
 }
   \item{data}{A data frame containg at least two columns containing data on
   individuals who were recruited to a respondent-driven sampling survey.  Each row represents
-  one unique respondent.  One column is a binary (0,1) indicator
-  variable for receipt of the mark (unique object).
+  one unique respondent.  One column is a logical (TRUE/FALSE) or binary
+  (1/0) indicator variable for receipt of the mark (unique object).
   The other required column contains the individual respondent-driven sampling weights.  All
   other columns are ignored.
 }
-  \item{list2}{A character string which identifies the column name in the data for the binary (0,1)
+  \item{list2}{A character string which identifies the column name in
+  the data for the logical (TRUE/FALSE) or binary (1/0)
   indicator for whether each respondent-driven survey respondent received the mark (unique
-  object). A value of 0 in that data frame column indicates that the respondent did not
+  object). A value of FALSE or 0 in that data frame column indicates that the respondent did not
   receive the mark (unique object) or, equivalently, was not listed on a
-  service roster, and a value of 1 indicates receipt of the mark or
+  service roster, and a value of TRUE or 1 indicates receipt of the mark or
   inclusion in the roster.
 
 }
@@ -52,7 +53,8 @@ RDS_2S_PSE(n.list1 = NULL, data = NULL, list2 = NULL, weight = NULL, bootreps = 
   populations size is computed.  Unweighted estimates are provided for
   comparison only, and should not be used for estimation from respondent-driven sampling.
 }
-  \item{seed}{RNG seed for bootstrap replication. Defaults to system
+  \item{seed}{Initializing seed for the pseudo-random number generator
+  used fo  bootstrap replication. Defaults to system
   time. Set to a particular value to generate repeatable replications.
 }
 }
@@ -97,6 +99,9 @@ A data frame containing 7 columns.  The columns are:
 %%}
 \examples{
 require(boot)
+
+## Attach the simulated data
+data(FSW)
 
 help(FSW)
 
