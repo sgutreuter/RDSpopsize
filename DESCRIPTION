@@ -1,10 +1,16 @@
 Package: RDSpopsize
 Type: Package
-Title: Estimation of population size from respondent-driven sampling.
-Version: 0.1
-Date: 2018-11-02
-Author: Steve Gutreuter
-Maintainer: Steve Gutreuter <sgutreuter@gmail.com>
-Depends: boot
-Description: Estimation of the size of key populations from respondent-driven sampling.  Currently provides only the capability to estimate population size from two-source capture-recapture sampling or, equivalently, the "multiplier method" commonly used in epidemiology.
-License: GPL-2
+Title: Estimation of population size from respondent-driven sampling
+Version: 0.2
+Date: 2019-11-19
+Authors@R: person("Steve", "Gutreuter", email = "sgutreuter@gmail.com",
+	  role = c("aut", "cre"))
+Depends: R(>= 3.5.0), boot
+Description: Estimation of the size of key populations from respondent-driven
+	 sampling.  Currently provides only the capability to estimate population
+	 size from two-source capture-recapture sampling or, equivalently, the
+	 "multiplier method" commonly used in epidemiology.
+License: GPL (>= 2)
+URL: https://github.com/sgutreuter/RDSpopsize.git
+Encoding: UTF-8
+RoxygenNote: 6.1.1
